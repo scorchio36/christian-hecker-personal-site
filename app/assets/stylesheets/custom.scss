@@ -2,12 +2,12 @@
 @import "bootstrap";
 
 
-//Navbar
-
 body {
   //background-color: #ffbbbb;
 }
 
+
+//Navbar
 #logo {
   width: 25%;
   margin:10px;
@@ -29,11 +29,12 @@ body {
   a {
     color: #ff3333;
     font-weight: bold;
-    font-family: merriweather;
+    font-family: graduate;
     font-size: 1.2em;
   }
 }
 
+//home page content
 .social-media-icon {
   width: 75px;
   height: 75px;
@@ -52,16 +53,79 @@ body {
   }
 }
 
-
 .main-intro-paragraph-block {
 
   text-align: center;
-  width: 500px;
+  width: 600px;
   margin: auto;
+  margin-top: -10px;
+  font-family: serif;
 
-  h2 small {
-    line-height: 10%;
+  h2 {
+    font-weight: bold;
+    line-height: 0.9em;
+
   }
 
+}
+
+
+//project page
+.meme-kitchen {
+  background-image: url("meme_background_dark.jpg");
+  width: 100vw;
+
+  h1 {
+    color: #ffffff;
+    font-family: graduate;
+    margin: 25px;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+
+    small {
+      text-shadow: 2px 2px black;
+      font-size: 0.6em;
+      color: #eeeeee;
+
+    }
+  }
+}
+
+//Make a mixin for each of these so you can change size, color, font for each title, etc...
+.project-title {
+  width: 50%;
+}
+
+.project-description {
+  text-align: center;
+  color: white;
+  width: 500px;
+  margin: auto;
+  text-shadow: 2px 2px black;
+}
+
+.project-button-block {
+  margin: auto;
+  width: 150px;
+}
+
+.project-button {
+  background-color: rgba(0,0,0, 0.0);
+  color: white;
+
+  border: 3px solid white;
+  border-radius: 5px;
+
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 20px;
+
+
+  text-decoration: none;
+
+  &:hover {
+    text-decoration:none;
+  }
 
 }
