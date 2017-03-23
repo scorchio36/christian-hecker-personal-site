@@ -132,7 +132,6 @@ body {
 
 
 
-
 //about page
 .about-page-self-pic {
   float: left;
@@ -149,4 +148,63 @@ body {
   margin-top: 5px;
   font-weight:bold;
   //font-family: graduate;
+}
+
+
+//blog page
+.blog1-title-block {
+  background-image: url("blog1.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100vw 350px;
+
+  width: 100vw;
+  height: 350px;
+
+  border: 1px solid black;
+
+  text-align: center;
+}
+
+.blog1-title {
+  font-weight: bold;
+  color: #eeeeee;
+  text-shadow: 1px 1px black;
+}
+
+.blog1-subtitle {
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 450px;
+  margin: auto;
+  color: #dddddd;
+}
+
+.blog-button-block {
+  margin: auto;
+  width: 150px;
+}
+
+.blog-button {
+  background-color: rgba(0,0,0, 0.0);
+  color: white;
+
+  border: 3px solid white;
+  border-radius: 5px;
+
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 20px;
+
+
+  text-decoration: none;
+
+  &:hover {
+    text-decoration:none;
+  }
+
+}
+
+.blog1 {
+  visibility: hidden;
 }

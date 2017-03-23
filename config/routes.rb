@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   get '/projects', to: 'static_pages#projects'
   get '/about', to: 'static_pages#about'
   get '/contact', to: 'static_pages#contact'
+  get '/blog', to: 'static_pages#blog'
+
+  post '/static_pages/blog1', to: 'static_pages#blog1'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
