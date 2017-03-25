@@ -3,8 +3,10 @@
   <div class="row">
       <%= link_to("https://twitter.com/heckerhacker") do %>
         <%= image_tag("twitter.png", alt: "twitter", class:"social-media-icon img-thumbnail") %><% end %>
-      <%= image_tag("linkedin.png", alt: "linkedin", class:"social-media-icon img-thumbnail") %>
-      <%= image_tag("github.png", alt: "github", class:"social-media-icon img-thumbnail") %>
+      <%= link_to("https://www.linkedin.com/in/christian-hecker-124241112/") do %>
+        <%= image_tag("linkedin.png", alt: "linkedin", class:"social-media-icon img-thumbnail") %><% end %>
+      <%= link_to("https://github.com/scorchio36") do %>
+        <%= image_tag("github.png", alt: "github", class:"social-media-icon img-thumbnail") %><% end %>
   </div>
 
   <div class="row home-page-self-pic">
