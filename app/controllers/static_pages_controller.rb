@@ -1,21 +1,21 @@
 class StaticPagesController < ApplicationController
-  def home
+  def home #Homepage
   end
 
-  def projects
+  def projects #Contains a listing of all the work I have done in the past
   end
 
-  def about
+  def about #An about page for me and my website
   end
 
-  def contact
+  def contact #A short little contact page
   end
 
-  def blog
+  def blog #The main page where I keep my blog posts
 
   end
 
-  def blog1
+  def blog1 #Ajax response for each blog
     respond_to do |format|
       format.js {render file: 'blogs/blog1.js.erb'}
     end

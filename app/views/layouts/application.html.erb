@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pweb</title>
+    <title>Christian Hecker - Welcome to my website!</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,10 +9,12 @@
   </head>
 
   <body>
+    <!--Every page on the site should have a navbar and footer -->
     <%= render "layouts/navbar" %>
     <%= render "layouts/footer" %>
     <%= yield %>
 
+    <!--Added these breaks here to make the entire site scrollable (the footer blocks a lot of the content on the bottom of the page) -->
     <br><br><br><br><br><br><br><br>
   </body>
 </html>

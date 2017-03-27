@@ -2,86 +2,8 @@
   <header>
     <div class="row">
       <nav class="navbar navbar-default navbar-fixed-bottom">
-        <ul class="list-inline" style="padding-left: 12px; margin-bottom: -20px;">
-          <h6 style="font-weight: bold; margin-bottom: -5px;">What I know:</h6>
-          <li style="text-align:center;"><%= link_to("http://rubyonrails.org/") do %>
-            <span style="padding: 5px;">
-              <%= image_tag("rails.png", class: "footer-icon") %>
-              <h6 style="font-weight: bold; margin-top: -10px;">Ruby on Rails 5</h6>
-            </span></li>
-          <% end %>
-
-          <li style="text-align:center;"><%= link_to("https://www.w3schools.com/html/html5_intro.asp") do %>
-            <span style="padding: 5px;">
-              <%= image_tag("html5.png", class: "footer-icon") %>
-              <h6 style="font-weight: bold; margin-top: -10px;">HTML5</h6>
-            </span></li>
-          <% end %>
-
-          <li style="text-align:center;"><%= link_to("http://sass-lang.com/") do %>
-            <span style="padding: 5px;">
-              <%= image_tag("sass.png", class: "footer-icon") %>
-              <h6 style="font-weight: bold; margin-top: -10px;">Sass</h6>
-            </span></li>
-          <% end %>
-
-          <li style="text-align:center;"><%= link_to("https://www.javascript.com/") do %>
-            <span style="padding: 5px;">
-              <%= image_tag("javascript.png", class: "footer-icon") %>
-              <h6 style="font-weight: bold; margin-top: -10px;">Javascript</h6>
-            </span></li>
-          <% end %>
-
-          <li style="text-align:center;"><%= link_to("https://jquery.com/") do %>
-            <span style="padding: 5px;">
-              <%= image_tag("jquery.png", class: "footer-icon") %>
-              <h6 style="font-weight: bold; margin-top: -10px;">Jquery</h6>
-            </span></li>
-          <% end %>
-
-          <li style="text-align:center;"><%= link_to("http://rspec.info/") do %>
-            <span style="padding: 5px;">
-              <%= image_tag("rspec.png", class: "footer-icon") %>
-              <h6 style="font-weight: bold; margin-top: -10px;">Rspec</h6>
-            </span></li>
-          <% end %>
-
-          <li style="text-align:center;"><%= link_to("https://aws.amazon.com/") do %>
-            <span style="padding: 5px;">
-              <%= image_tag("aws.png", class: "footer-icon") %>
-              <h6 style="font-weight: bold; margin-top: -10px;">AWS</h6>
-            </span></li>
-          <% end %>
-
-          <li style="text-align:center;"><%= link_to("https://www.ruby-lang.org/en/") do %>
-            <span style="padding: 5px;">
-              <%= image_tag("ruby.jpeg", class: "footer-icon") %>
-              <h6 style="font-weight: bold; margin-top: -10px;">Ruby</h6>
-            </span></li>
-          <% end %>
-
-          <li style="text-align:center;"><%= link_to("https://www.heroku.com/") do %>
-            <span style="padding: 5px;">
-              <%= image_tag("heroku.png", class: "footer-icon") %>
-              <h6 style="font-weight: bold; margin-top: -10px;">Heroku</h6>
-            </span></li>
-          <% end %>
-
-          <li style="text-align:center;"><%= link_to("http://www.cplusplus.com/") do %>
-            <span style="padding: 5px;">
-              <%= image_tag("cplus.png", class: "footer-icon") %>
-              <h6 style="font-weight: bold; margin-top: -10px;">C++</h6>
-            </span></li>
-          <% end %>
-
-          <li style="text-align:center;"><%= link_to("https://www.ubuntu.com/") do %>
-            <span style="padding: 5px;">
-              <%= image_tag("ubuntu.jpg", class: "footer-icon") %>
-              <h6 style="font-weight: bold; margin-top: -10px;">Ubuntu</h6>
-            </span></li>
-          <% end %>
-
-        </ul>
+        <!--footer_icon partial contains each of the icons that will go in the footer-->
+        <%= render 'layouts/footer_icon' %>
       </nav>
     </div>
   </header>

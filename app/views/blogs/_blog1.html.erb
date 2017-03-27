@@ -1,3 +1,102 @@
-<div "row">
-  <h1>
+<div class="row blog1-title-block">
+
+  <h1 class="blog1-title">
+    Chapter 1: Diving into Web Development
+  </h1>
+
+  <p class="blog1-subtitle">
+    This Spring I decided to take some time off of school to do something I have always wanted to do. Be a web developer.
+    I don't know what it is about this field that seems so different to me than traditional programming. There's just something so
+    magical and enticing about it. It's difficult to describe. I started out learning basic Java in...
+  </p>
+
+  <div class="blog-button-block" style="margin-top: 35px;">
+    <%= link_to({controller: 'static_pages', action: 'blog1'}, style: "text-decoration: none;", remote: true, method: 'post') do %>
+      <div class="blog-button">
+        Read more
+      </div>
+    <% end %>
+  </div>
+
 </div>
+
+<div class="row blog1">
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp; This Spring I decided to take some time off of school to do something I have always wanted to do. Be a web developer.
+
+  I don't know what it is about this field that seems so different to me than traditional programming. There's just something
+  so magical and enticing about it. It's difficult to describe. I started out learning basic Java in high school. It's a pretty cool
+  language. Not too complicated and it has a lot of applications: Applets, android apps, portability, web apps, etc.
+  However, Java was just the gateway language for me. I quickly discovered that programming and computer science consisted of a lot more
+  than <i>just</i> Java.<br>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;Java will always have a special place in my heart, but I have to admit, probably like a lot of people, I
+  am a C/C++ fanboy. The first time I saw C, I was so put off. I had very little experience with programming and lacked a lot of
+  what Michael Hartl calls technical sophistication (That drive and know-how of finding the answer to a new problem and setting something
+  up and getting it to work all on your own). It scared me. I had only ever seen Java code in my life, but I kept coming back to C. I worked
+  so hard to get a GCC compiler set up on my laptop. Hours of trial and error and scrolling through intimidating documentation. All alone
+  with no professor there to hold my hand. But it ended up being so worth it. I was so damn proud of myself when that first compilation
+  <i>finally</i> worked and I had an error free command prompt. When I ran my newly compiled and linked C project and saw that 'Hello World'
+  on the screen I was...ecstatic.<br>
+
+  <%= image_tag("fox_funny.jpeg", class:"img-thumbnail", style: "margin-left: 15vw; margin-top: 10px; margin-bottom: 10px;") %>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;C/C++ eventually became my favorite language over the next few years. It was just so simple, but it could do so much. It seemed to have
+  a lot more capabilities than Java and made coding seem more straight-forward and more about solving the problem. I think I loved the power you have from
+  knowing C and C++. When you're using that language you feel like you can do anything. Because you pretty-much can. I jumped from
+  so many different types of personal projects using C. I rendered some pretty cool stuff with OpenGL and made some cute games with it.
+  I built a freaking command line chess game with AI trees and linked lists. I used it to solve random math and science problems that
+  would come my way from time to time. I made a 2D scrollers game for my android phone. But it goes beyond software. Especially because I
+  am an electrical engineer. The coolest thing about C/C++ is how low-level it can be, while still seeming so high-level.
+  It is amazing to me that I can use C++ to create elegant functions and do OOP, but at the same time, use it to program <i>physical</i>
+  hardware like a microcontroller or servo motor.<br>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;This blog post is about my journey to web development, so I do apologize for going off on such a tangent about C/C++. It has just been
+  such a big part of my programming path and I am such a big fan of it that I can't really help it.<br>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;Web development has always been this cool, foreign idea to me. I always have these random spurs of wanting to get into the field
+  and I go out and learn HTML, CSS, and javascript. But I never seemed to be able to put the ideas together and just do it. I think
+  having a just-do-it mentality is pretty important to web development but the ideas never clicked fully for me to understand how
+  these strange languages and stylings could all fit together to make a working web-page. I didn't understand it and I didn't have the
+  guts to just go out and do it. To go out and make a webpage. I always felt very safe and comfortable with my Java and C++.
+  I was always jealous of the guys that could do it though. Web developers seemed so knowledgable and so quick-thinking. They seemed to
+  be such good programmers and their work seemed like magic. So many shows and movies also really romanticized that idea of what web
+  developers were and how cool they are. This pushed me further to wanting to get into the field and I would get more of these short spurs,
+  but always fall short of creating something.<br>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;Last year I got another spur. I wanted to be a web developer. So I started reviewing HTML, CSS, and Javascript again. I went
+  through the motions of learning them again because they seemed like the gateway to web development. Everybody knows about these languages
+  and I always felt that if I knew them well-enough I could become a web developer. I would always just go through the motions of
+  learning these languages because that kind of approach worked for me when doing Java and C++. But Web Development is more complex than that.
+  You have to research and <i>know</i> how each part of these system works and how it fits together. You have to constantly be up to date
+  and be researching because everything is <i>always</i> changing. New software, new versions, new languages, new frameworks... You have
+  to be familiar with a lot more than just the syntax of a single language.<br>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;Last year my spur seemed to be going like any other time. I was getting lost and bored with the languages because I wasn't doing anything.
+  Then I found Ruby on Rails and it changed everything. I found a really good book about Rails last year and everything just clicked...
+  It was so different than the programming I was used to. It made me feel like I had to know a lot more theory and always be
+  looking for ways to right better, cleaner, and more efficient code. For some reason, Ruby on Rails was all I needed. Ruby on Rails just made
+  me understand fundamentally how web development works and the basic client-server, front-end vs
+  back-end model. Rails made it easier to see how everything fits together to make an app. Which was what I needed all along. And Rails, especially
+  with its newest update to Rails 5, can be as complicated or as simple as you need it to be. Its an elegant web development framework
+  with a battle-tested and experienced structure and a phenomenal community.<br>
+
+  <%= image_tag("webdev.jpeg", class:"img-thumbnail", style: "margin-left: 10vw; margin-top: 10px; margin-bottom: 10px;") %>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;Rails helped me create my first application. Releasing it really gave me a lot of confidence and fighting through a lot of what I didn't
+  know helped me become a better programmer. My first project was a cute little meme site where you can sign up for an account and post
+  memes (Check it out). I had to use Javascript, Jquery, Ajax, Sass, HTML5, Ruby, and do a lot of research to set everything up. Now I feel
+  more ready than ever to try to create more apps and to eventually go after a real web development job. This was a huge step for me.<br>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;However, just like with Java, Rails showed me that there is an entire world out there when it comes to web development.There's so many
+  other frameworks and software that I want to try and learn. I have already started learning about Angular2 and React JS and would love
+  to come to implement them within my next projects. Apparently theres a massive amount of front-end frameworks that are very popular.
+  I found out about Ember JS, Meteor JS, Vue JS, Aurelia JS, and even Batman JS. Javascript is getting absolutely huge. I would love a chance
+  to get to learn Node JS and get into the MEAN stack business. I want to learn about different databases and perfect my SQL skills.
+  One day I would even love to get to know about system architecture and how everything interacts on a deeper level.<br>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;I am so happy to have released my first app and to have put my foot in the door. However, I know that I have a long, long road ahead of
+  me to be able to be a great web developer. I have only scratched the surface of what web development is. There is a lot more to learn,
+  but I am so excited that I have the opportunity to go after my dream of being a real web developer.<br>
+
+<div>

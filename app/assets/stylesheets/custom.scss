@@ -2,11 +2,6 @@
 @import "bootstrap";
 
 
-body {
-  //background-color: #ffbbbb;
-}
-
-
 //Navbar
 #logo {
   width: 25%;
@@ -14,9 +9,10 @@ body {
 }
 
 .navbar {
-  background-color: rgba(255,255,255,0.85);
+  background-color: rgba(255,255,255,0.85); //make the background of the navbar transparent
 }
 
+//links to other pages of the website
 .menu-bar {
   position: absolute;
   bottom: 0px;
@@ -34,14 +30,25 @@ body {
   }
 }
 
+
+
+
+
 //footer
+//icons for the footer that each display a technology that I use
 .footer-icon {
   width: 50px;
   height: 50px;
   margin: 12px;
 }
 
-//home page content
+
+
+
+
+
+//home page
+//(Twitter icon, linkedin icon, etc...)
 .social-media-icon {
   width: 75px;
   height: 75px;
@@ -77,7 +84,53 @@ body {
 }
 
 
-//project page
+
+//contact page
+//easier to position them absolutely
+.contact-info-title {
+  position: absolute;
+  top: 7vw;
+  left: 7vw;
+  h1 {
+    font-weight: bold;
+  }
+}
+
+.contact-info-block {
+  position:absolute;
+  top: 17vw;
+  left: 9vw;
+}
+
+
+
+//about page
+.about-page-self-pic {
+  float: left;
+  width: 30vw;
+  height: 95vh;
+  margin: 10px;
+}
+
+//there are two columns in the about section
+.about-column {
+  float: left;
+  width: 33%;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: left;
+  margin-top: 5px;
+  font-weight:bold;
+  font-size: 1.3em;
+  font-family: serif;
+}
+
+
+
+
+
+//projects page
+//styling for my project at thememekitchen.com block
 .meme-kitchen {
   background-image: image-url("meme_background_dark.jpg");
   width: 100vw;
@@ -97,6 +150,8 @@ body {
     }
   }
 }
+
+
 
 //Make a mixin for each of these so you can change size, color, font for each title, etc...
 .project-title {
@@ -139,26 +194,6 @@ body {
 
 
 
-//about page
-.about-page-self-pic {
-  float: left;
-  width: 30vw;
-  height: 95vh;
-  margin: 10px;
-}
-
-.about-column {
-  float: left;
-  width: 33%;
-  padding-left: 5px;
-  padding-right: 5px;
-  text-align: left;
-  margin-top: 5px;
-  font-weight:bold;
-  font-size: 1.3em;
-  font-family: serif;
-}
-
 
 //blog page
 .blog1-title-block {
@@ -194,7 +229,7 @@ body {
 }
 
 .blog-button {
-  background-color: rgba(0,0,0, 0.0);
+  background-color: rgba(0,0,0, 0.0); //make the blog button transparent
   color: white;
 
   border: 3px solid white;
