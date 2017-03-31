@@ -47,14 +47,33 @@
   being able to like/dislike any post, being able to "Review Dishes" by posting comments on posts, a subscription system where
   you are able to subscribe to other chefs to view their memes, and even a notification system to let you know when someone has
   liked your meme or commented about your dish. Most of these features, including the feeds, are implemented using javascript
-  and ajax technology which allows the app to feel more dynamic and similar to a single page application.
+  and ajax technology which allows the app to feel more dynamic and similar to a single page application.<br>
 
   <br><br><b>How was it built?</b>
 
-  The back-end of my site and application as a whole is implemented using Ruby on Rails 5. My app is hosted on Heroku and is
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;The back-end of my site and application as a whole is implemented using Ruby on Rails 5. My app is hosted on Heroku and is
   currently up running on paid Hobby Dynos. I use PostgreSQL for my back-end production database - This allows my app to deploy easily
-  with Heroku (I really want to check out MongoDB in a future project though. Maybe when I get into some Node JS). Finally, I
-  use the Carrierwave gem in order to upload my images to my website and everything is stored on an S3 bucket, managed by an
-  account I have set up with the Amazon Web Services Cloud.
+  with Heroku (I really want to check out MongoDB in a future project though. Maybe when I get into some Node JS). [My database logic
+  consists of a few resources/models - the main ones being User, Post, and Comment and some smaller more specific ones like
+  Notification or Following/Followers (Allows users to sub to each other)]. I used Rail's default testing for my application, but
+  when I get the chance I will be swapping over to RSpec and hopefully using some Cucumber as well.
+  Finally, I use the Carrierwave gem in order to upload my images to my website and everything is stored on an S3 bucket, managed by an
+  account I have set up with the Amazon Web Services Cloud. It's a bit of a lengthy set up but it works well. <br>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;The front-end of my site is built using a combination of Javascript, jquery, Sassy CSS,
+  HTML5, and some Twitter bootstrap. I wanted my site to be dynamic and respond without overbearing server requests so I tried
+  to implement AJAX functionality into a lot of my site. It took a while to learn how to implement AJAX with Ruby on Rails, but
+  once I figured it out, it was a breeze to use. Although, there is apparently some other thing in Rails called Turbolinks that
+  is apparently some type of super ajax? I didn't read about them until recently, but I would love a chance to get to use them
+  in a future project.<br>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;Also some miscellaneous information,
+  I purchased my domain name from Namecheap.com and they provide a pretty good DNS service. It was also fairly simple to redirect
+  any traffic to heroku. I used a free SSL provider from a website called 'lets encrypt' which allowed me to provide a secure,
+  encrypted connection for my users using a tool called Certbot. I was able to place my site on Google's index and add Google
+  Analytics fairly quickly.
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp; There was a lot more detailed work and more things that I could talk about, but I just wanted to
   
+
 </div>
