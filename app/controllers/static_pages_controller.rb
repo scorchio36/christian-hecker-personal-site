@@ -21,4 +21,11 @@ class StaticPagesController < ApplicationController
     end
   end
 
+  def blog2
+
+    respond_to do |format|
+      format.js {render file: 'blogs/blog2.js.erb'}
+    end
+  end
+
 end

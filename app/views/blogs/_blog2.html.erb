@@ -1,0 +1,60 @@
+<div class="row blog-title-block2">
+
+    <h1 class="blog-title2">
+      Chapter 2: My First Real Web App
+    </h1>
+
+    <p class="blog-subtitle2">
+      This Spring I decided to take some time off of school to do something I have always wanted to do. Be a web developer.
+      I don't know what it is about this field that seems so different to me than traditional programming. There's just something so
+      magical and enticing about it. It's difficult to describe. I started out learning basic Java in...
+    </p>
+
+    <div class="blog-button-block" style="margin-top: 35px;">
+      <%= link_to({controller: 'static_pages', action: 'blog2'}, style: "text-decoration: none;", remote: true, method: 'post') do %>
+        <div class="blog-button2">
+          Read more
+        </div>
+      <% end %>
+    </div>
+
+</div>
+
+<div class="row blog2">
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;I have just released my first real, solo web app onto the internet today and I am really happy about it. It took a lot of work,
+  a lot of research, and a lot of hours, but I am very proud to have something that I can share with the rest of the world. I
+  wanted to just take some time and discuss things I learned and mistakes I made while building this site. If you have some time,
+  check it out at <%= link_to "www.thememekitchen.com", "http://www.thememekitchen.com" %>.<br>
+
+  <br><br><b>What is it?</b>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;The Meme Kitchen is a cute little meme site idea that I came up with a couple of months ago.
+  The website is set up like a restaurant, but instead of serving food, customers get served up some spicy memes. When you
+  are looking at memes, you are a customer, but you can also become a meme chef. You can get in the kitchen and make your own
+  meme dishes and share them with the public. Each "dish" has a title and an optional caption with an option to upload an image
+  or gif. The process is easy, fast, and your memes go straight out to the public for everyone to see!<br>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;When you make a new meme, your dish is automatically sent out to the "Buffet" page. This is a feed
+  of every single post that has been made by all users. It is constantly being updated with the newest posts and when the site
+  reaches a certain critical amount of users this page will be a virtually endless feed of memes.<br>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;The other main feed on the website is known as the "Main Course" feed. This is where the best of
+  the best dishes are served to customers. These memes are chosen by Meme Kitchen Admins and are immediately shown on the main
+  course feed when they are selected. They are added to the top of list. Just like in the buffet, the newst additions are shown
+  first.<br>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;Other features of the site include having your own profile with all of the dishes you've made,
+  being able to like/dislike any post, being able to "Review Dishes" by posting comments on posts, a subscription system where
+  you are able to subscribe to other chefs to view their memes, and even a notification system to let you know when someone has
+  liked your meme or commented about your dish. Most of these features, including the feeds, are implemented using javascript
+  and ajax technology which allows the app to feel more dynamic and similar to a single page application.
+
+  <br><br><b>How was it built?</b>
+
+  The back-end of my site and application as a whole is implemented using Ruby on Rails 5. My app is hosted on Heroku and is
+  currently up running on paid Hobby Dynos. I use PostgreSQL for my back-end production database - This allows my app to deploy easily
+  with Heroku (I really want to check out MongoDB in a future project though. Maybe when I get into some Node JS). Finally, I
+  use the Carrierwave gem in order to upload my images to my website and everything is stored on an S3 bucket, managed by an
+  account I have set up with the Amazon Web Services Cloud.
+  
+</div>

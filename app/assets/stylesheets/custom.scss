@@ -196,7 +196,66 @@
 
 
 //blog page
-.blog1-title-block {
+
+@for $i from 1 to 3 {
+  .blog-title#{$i} {
+    font-weight: bold;
+    color: #eeeeee;
+    text-shadow: 1px 1px black;
+  }
+
+  .blog-subtitle#{$i} {
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 450px;
+    margin: auto;
+    color: #dddddd;
+  }
+
+
+
+  .blog-button#{$i} {
+    background-color: rgba(0,0,0, 0.0); //make the blog button transparent
+    color: white;
+
+    border: 3px solid white;
+    border-radius: 5px;
+
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 20px;
+
+
+    text-decoration: none;
+
+    &:hover {
+      text-decoration:none;
+    }
+
+  }
+
+
+  .blog#{$i} {
+    display: none;
+    font-size: 1.3em;
+    text-align: justify;
+    width: 80vw;
+    margin: auto;
+    line-height: 30px;
+    font-family: serif;
+  }
+
+
+}
+
+.blog-button-block {
+  margin: auto;
+  width: 150px;
+}
+
+
+.blog-title-block1 {
   background-image: image-url("blog1.jpeg");
   background-repeat: no-repeat;
   background-size: 100vw 350px;
@@ -207,54 +266,19 @@
   border: 1px solid black;
 
   text-align: center;
+  margin-top: 15px;
 }
 
-.blog1-title {
-  font-weight: bold;
-  color: #eeeeee;
-  text-shadow: 1px 1px black;
-}
 
-.blog1-subtitle {
-  font-size: 1.2em;
-  font-weight: bold;
-  width: 450px;
-  margin: auto;
-  color: #dddddd;
-}
+.blog-title-block2 {
+  background-image: image-url("ubuntu1.png");
+  background-repeat: no-repeat;
+  background-size: 100vw 350px;
 
-.blog-button-block {
-  margin: auto;
-  width: 150px;
-}
+  width: 100vw;
+  height: 350px;
 
-.blog-button {
-  background-color: rgba(0,0,0, 0.0); //make the blog button transparent
-  color: white;
-
-  border: 3px solid white;
-  border-radius: 5px;
+  border: 1px solid black;
 
   text-align: center;
-  font-weight: bold;
-  padding: 5px;
-  margin-bottom: 20px;
-
-
-  text-decoration: none;
-
-  &:hover {
-    text-decoration:none;
-  }
-
-}
-
-.blog1 {
-  visibility: hidden;
-  font-size: 1.3em;
-  text-align: justify;
-  width: 80vw;
-  margin: auto;
-  line-height: 30px;
-  font-family: serif;
 }
