@@ -26,6 +26,8 @@
   wanted to just take some time and discuss things I learned and mistakes I made while building this site. If you have some time,
   check it out at <%= link_to "www.thememekitchen.com", "http://www.thememekitchen.com" %>.<br>
 
+  <%= image_tag("thinking_meme.png", style:"margin: auto;")%>
+
   <br><br><b>What is it?</b>
 
   <br>&nbsp;&nbsp;&nbsp;&nbsp;The Meme Kitchen is a cute little meme site idea that I came up with a couple of months ago.
@@ -65,7 +67,9 @@
   to implement AJAX functionality into a lot of my site. It took a while to learn how to implement AJAX with Ruby on Rails, but
   once I figured it out, it was a breeze to use. Although, there is apparently some other thing in Rails called Turbolinks that
   is apparently some type of super ajax? I didn't read about them until recently, but I would love a chance to get to use them
-  in a future project.<br>
+  in a future project. Side note, after taking a look at a little bit of Angular 2 and React JS, I wonder how the site would have
+  turned out if I had chosen to use one of these front-end frameworks. Maybe after trying them out in a few projects I can come back
+  and reapply it to this app.<br>
 
   <br>&nbsp;&nbsp;&nbsp;&nbsp;Also some miscellaneous information,
   I purchased my domain name from Namecheap.com and they provide a pretty good DNS service. It was also fairly simple to redirect
@@ -74,6 +78,62 @@
   Analytics fairly quickly.
 
   <br>&nbsp;&nbsp;&nbsp;&nbsp; There was a lot more detailed work and more things that I could talk about, but I just wanted to
-  
+  provide a limitedly-rough idea of how the whole system works.<br>
+
+  <br><br><b>Some mistakes along the way</b>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;Thought I would take this time to also list all of the mistakes and shortcomings I faced on building
+  this project up. I definitely learned from them and hope to better myself to avoid them in future projects. Maybe this section
+  will be a little useful to you if you are just starting out with Rails as well.<br>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;First off - a big mistake happened to me about 3 or 4 weeks in. Using completely different databases
+  for you production environment and development/test environment. When I was learning Ruby on Rails I learned with SQLite3, which
+  is the default SQL database service that comes with Rails. It is all configured for you on creation of your app and you can
+  immediately start shooting off Active Record commands, with little concern for your back-end databasing. I knew that Heroku
+  works well with PostgreSQL, but I didn't think it was really something that I should check or worry about. So I just kept
+  working with SQLite3 for development and PostgreSQL for my production database. Well after a few weeks of having a bunch of models
+  set up and a whole configuration for my app, I start running into compatibility issues between my development and production
+  envionments. Database migrations were starting to give me problems and I was getting errors when trying to use nonRails-specific
+  SQL queries. And it got even worse when I realized that I wanted some of the features of Postgres that SQLite just didnt have.
+  I had to reconfigure my app's databases on the development side and correct a bunch of errors. It was a pain to
+  have to worry about that when I was that far into my project. Word of advice, to myself and to you, use the same Database management
+  system for your app's development and production environments.<br>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;Another problem I had was maintaining git. I always make sure to use git consistently and
+  push up to my repository as often as possible. However, I wished that I had organized my branches and given better names
+  to my commits. I tried to create new branches and give useful names to everything as often as I could, but sometimes I
+  didn't catch myself before doing a lot of work on the master branch, rather than doing it on its own separate branch. If I
+  could rate myself, I'd say my use of git was satisfactory, but it could have been much better. <br>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;Something I cannot stress enough when it comes to making an app is to plan. Before you code, before
+  you start hacking away, before you start creating projects and trying to build your idea, sit down and make a plan. Write it down,
+  record it, draw it. You don't have to have every single detail figured out to the bone, but make sure that you have a clear
+  understand of what you want, what your end product should look like, the backbone functionality that you want from your app,
+  what technology and software you're going to use, and how everything will fit together. It will benefit you so much in the long
+  run to just plan everything out. It will save you time in the future and keep your head from getting lost in all the mess
+  of files.<br>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;I wrote some basic to intermediate tests for my application, but I wish I had done more. After learning about and using RSpec,
+  I'm slowly starting to realize the amazing benefits of having a well-tested application. Tests allow you to refactor your code
+  (Make your code cleaner, safer, and better), without having to worry about a working functionality regressing (breaking down).
+  Essentially we can clean up our code without the worry of breaking it, as a test will let you know if your refactor has broken
+  it. Tests also allow for integration testing and testing when there isn't an interface. I ran into this problem when programming
+  my models and non-view functionality for them. I wanted to test my model code really badly, but the problem is that I didn't
+  want to have to wait for a visual aspect to be programmed on top of my model functionality for me to manually start testing it.
+  With tests, you can test your <i>Code</i> Code, without needing an interface. Finally, tests offer great automation. You can
+  check the functionality of a huge collection of code with a single command and without having to do some old-age, brute-force
+  click-every-link-on-the-page-test. A mistake I made was not testing enough. If I could go back I would definitely have started
+  off my project with tests and kept the momentum going to have a beautifully tested app. I will definitely be working harder
+  to test my future applications.<br>
+
+
+  <br><br><b>Conclusion</b>
+
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;Thanks a lot for reading. This project may have been a rather silly concept, but I developed so many
+  skills and learned about so much that it was definitely worth it for my web programming career.
+  Most importantly, I had a freaking blast programming it. And I'm actually pretty damn happy with how it turned out. I will
+  be making improvement here and there as time goes on and will definitely be maintaing the website to make sure it is
+  scaling properly. I hope you take the time to check it out and I'll see you at my next blog!<br>
+
 
 </div>
