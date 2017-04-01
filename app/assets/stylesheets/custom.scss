@@ -243,8 +243,28 @@
     margin: auto;
     line-height: 30px;
     font-family: serif;
+    margin-top: 10px;
   }
 
+  .closeStoryLink#{$i} {
+    display: none;
+    text-decoration: none;
+    font-size: 1.5em;
+    float: right;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: 0px 2px 2px 2px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 3px;
+    background-color: #0645AD;
+    color:white;
+    margin-right: 100px;
+
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
 
 }
 
@@ -262,10 +282,12 @@
   width: 100vw;
   height: 350px;
 
-  border: 1px solid black;
-
   text-align: center;
   margin-top: 15px;
+
+  border-width: 0px 0px 4px 0px;
+  border-style: solid;
+  border-color: #0645AD;
 }
 
 
@@ -277,7 +299,9 @@
   width: 100vw;
   height: 350px;
 
-  border: 1px solid black;
+  border-width: 0px 0px 4px 0px;
+  border-style: solid;
+  border-color: #0645AD;
 
   text-align: center;
 }

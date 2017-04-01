@@ -21,11 +21,21 @@ class StaticPagesController < ApplicationController
     end
   end
 
-  def blog2
+  def close_blog1
+    respond_to do |format|
+      format.js {render file: 'blogs/close_blog1.js.erb'}
+    end
+  end
 
+  def blog2
     respond_to do |format|
       format.js {render file: 'blogs/blog2.js.erb'}
     end
   end
 
+  def close_blog2
+    respond_to do |format|
+      format.js {render file: 'blogs/close_blog2.js.erb'}
+    end
+  end
 end

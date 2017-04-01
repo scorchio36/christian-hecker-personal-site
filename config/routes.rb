@@ -8,7 +8,11 @@ Rails.application.routes.draw do
 
   #A post request to each of these blog(i) controller actions will allow users to open each blog with Ajax
   post '/static_pages/blog1', to: 'static_pages#blog1'
+  post 'static_pages/close_blog1', to: 'static_pages#close_blog1'
+
   post '/static_pages/blog2', to: 'static_pages#blog2'
+  post 'static_pages/close_blog2', to: 'static_pages#close_blog1'
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
