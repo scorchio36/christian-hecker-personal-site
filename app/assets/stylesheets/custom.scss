@@ -255,15 +255,23 @@
     border-style: solid;
     border-width: 0px 2px 2px 2px;
     border-radius: 0px 0px 10px 10px;
+    border-color: #0645AD;
     padding: 3px;
     background-color: #0645AD;
     color:white;
     margin-right: 100px;
+    margin-top: -4px;
 
     &:hover {
       text-decoration: none;
       color: white;
     }
+  }
+
+  .blogDate#{$i} {
+    float: right;
+    margin-right: 30px;
+    display: none;
   }
 
 }

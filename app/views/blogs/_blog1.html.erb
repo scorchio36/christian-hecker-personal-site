@@ -4,6 +4,10 @@
       Chapter 1: Diving into Web Development
     </h1>
 
+    <div>
+      <h2 class="blogDate1">March 21st, 2017</h2>
+    </div>
+
     <p class="blog-subtitle1">
       This Spring I decided to take some time off of school to do something I have always wanted to do. Be a web developer.
       I don't know what it is about this field that seems so different to me than traditional programming. There's just something so
@@ -17,10 +21,16 @@
         </div>
       <% end %>
     </div>
+
+
+
 </div>
 
 <div>
-  <%= link_to("close story", "#", class:"closeStoryLink1") %>
+  <%= link_to({controller: 'static_pages', action: 'close_blog1'}, method: 'post', remote:true) do %>
+    <h5 class="closeStoryLink1">Close story</h5>
+  <% end %>
+
 </div>
 
 

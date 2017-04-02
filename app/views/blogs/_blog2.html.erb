@@ -4,6 +4,10 @@
       Chapter 2: My First Real Web App
     </h1>
 
+    <div>
+      <h2 class="blogDate2">March 29st, 2017</h2>
+    </div>
+
     <p class="blog-subtitle2">
       This Spring I decided to take some time off of school to do something I have always wanted to do. Be a web developer.
       I don't know what it is about this field that seems so different to me than traditional programming. There's just something so
@@ -11,16 +15,20 @@
     </p>
 
     <div class="blog-button-block" style="margin-top: 35px;">
-      <%= link_to({controller: 'static_pages', action: 'blog2'}, style: "text-decoration: none;", remote: true, method: 'post') do %>
+      <%= link_to({controller: 'static_pages', action: 'blog2'}, style: "text-decoration: none;", remote: true,
+          method: 'post', remote: true, html:{multipart: true}) do %>
         <div class="blog-button2">
           Read more
         </div>
       <% end %>
     </div>
+
 </div>
 
 <div>
-  <%= link_to("close story", "#", class:"closeStoryLink2") %>
+  <%= link_to({controller: 'static_pages', action: 'close_blog2'}, method: 'post', remote:true) do %>
+    <h5 class="closeStoryLink2">Close story</h5>
+  <% end %>
 </div>
 
 <div class="row blog2">
